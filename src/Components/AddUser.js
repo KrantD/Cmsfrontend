@@ -11,6 +11,8 @@ function AddUser(props) {
     var [phoneno,setphoneno]= useState('');
     var [EmailId,setemailId]= useState('');
     var [Address,setaddress]= useState('');
+    var [State,setstate]= useState('');
+    var [Country,setcountry]= useState('');
     var [dob,setDOB]= useState('');
 
     var changeUn=(event)=>{
@@ -32,6 +34,12 @@ function AddUser(props) {
     var changeAddress=(event)=>{
         setaddress(event.target.value);
     }
+    var changeState=(event)=>{
+        setstate(event.target.value);
+    }
+    var changeCountry=(event)=>{
+        setcountry(event.target.value);
+    }
     var changeDOB=(event)=>{
         setDOB(event.target.value);
     }
@@ -46,6 +54,8 @@ function AddUser(props) {
             DateOfBirth:dob,
             username:un,
             password:pass,
+            state:State,
+            Country:Country,
             role:'',
             status:'active'
         };
@@ -82,6 +92,10 @@ function AddUser(props) {
             <input className='form-control' onChange={changeemailId} type="text" />
             <label className='form-control'>Address</label>
             <input className='form-control' onChange={changeAddress} type="text" />
+             <label className='form-control'>State</label>
+            <input className='form-control' onChange={changeState} type="text" /> 
+            <label className='form-control'>Country</label>
+            <input className='form-control' onChange={changeCountry} type="text" /> 
             <label className='form-control'>Date Of Birth</label>
             <input className='form-control' onChange={changeDOB} type="date" />
             <label className='form-control'>Username</label>
