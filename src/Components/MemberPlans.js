@@ -31,26 +31,26 @@ function MemberPlans() {
     }
     return (
 
-        <div>{
+        <div className='MP'>{
 
             plans.map(value => {
 
                 return (
-                   <div>
-                    {value.memberPlans.map(value2=>
+                    <div>
+                        {value.memberPlans.map(value2 =>
 
-                    <ul className='boxed'>
-                        <li>Member Id={value.id}</li>
-                        <li>Member Username={value.userName}</li>
-                        <li>Member plan Id={value2.pId}</li>
-                        <li>Member plan name={value2.plan.pName}</li>
-                        <button onClick={() => navigate('/Plans')} className='btn btn-success'>All plans</button>
-                        <button onClick={() => navigate('/Claims')} className='btn btn-success'>Submit claim</button>
-                    </ul>
-                    )}
+                            <ul className='boxed'>
+                                <li>Member Id={value.id}</li>
+                                <li>Member Username={value.userName}</li>
+                                <li>Member plan Id={value2.pId}</li>
+                                <li>Member plan name={value2.plan.pName}</li>
+                                <button onClick={() => navigate('/Plans')} className='btn btn-success'>All plans</button>
+                                <button onClick={() => navigate('/Claims')} className='btn btn-success'>Submit claim</button>
+                            </ul>
+                        )}
                     </div>
                 )
-                
+
 
             })
 

@@ -1,11 +1,12 @@
-.App {
-  background-color:cornsilk;
+ .App {
+  background-color:rgb(245, 236, 201);
    text-align: center;
-}
+} 
+
 /*
 
 .App-logo {
-  height: 40vmin;
+  height: 40vmin
   pointer-events: none;
 }
 

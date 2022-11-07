@@ -31,17 +31,17 @@ function ClaimDetails() {
 
                     </div>
                 )
-            }) 
+            })
         }
-         <div className='logout'>
-            <button onClick={() => navigate('/')} className='btn btn-success'>Logout</button>
-              </div>
+            <div className='logout'>
+                <button onClick={() => navigate('/')} className='btn btn-success'>Logout</button>
+            </div>
 
-<button className='btn btn success' onClick={getclaim}> GetAllClaims
-</button>
-         </div >
-          
-       
+            <button className='btn btn success' onClick={getclaim}> GetAllClaims
+            </button>
+        </div >
+
+
     );
 }
 

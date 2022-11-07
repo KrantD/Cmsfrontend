@@ -4,9 +4,9 @@ import './App.css';
 import AddUser from './Components/AddUser';
 
 
-import {BrowserRouter as Router,Routes,Route,Link }from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-import React,{  useState } from 'react';
+import React, { useState } from 'react';
 
 import LoginUser from './Components/LoginUser';
 
@@ -25,28 +25,28 @@ function App() {
 
 
   return (
-    
+
     <div className="App">
-       
-        {/* <AddUser />
+
+      {/* <AddUser />
         <LoginUser/> 
         <PlanDetails/> */}
 
-        <Router>
+      <Router>
         <Routes>
-        <Route exact path="/" element={<LoginUser/>}></Route>
-        <Route exact path="/Register" element={<AddUser/>}></Route> 
-        <Route exact path="/Plans" element={<PlanDetails/>}></Route> 
-        <Route exact path="/MemberPlans" element={<MemberPlans/>}></Route>
-        <Route exact path="/Claims" element={<SubmitClaims/>}></Route>
-        <Route exact path="/Update" element={<UpdatePlans/>}></Route>
-        <Route exact path="/ClaimDetails" element={<ClaimDetails/>}></Route>
+          <Route exact path="/" element={<LoginUser />}></Route>
+          <Route exact path="/Register" element={<AddUser />}></Route>
+          <Route exact path="/Plans" element={<PlanDetails />}></Route>
+          <Route exact path="/MemberPlans" element={<MemberPlans />}></Route>
+          <Route exact path="/Claims" element={<SubmitClaims />}></Route>
+          <Route exact path="/Update" element={<UpdatePlans />}></Route>
+          <Route exact path="/ClaimDetails" element={<ClaimDetails />}></Route>
         </Routes>
-        </Router>
-       
-       
+      </Router>
+
+
     </div>
-      
+
   );
 }
 
