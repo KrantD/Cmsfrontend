@@ -24,6 +24,9 @@ function SubmitClaims() {
             mode:'cors'
         });
         var data = await response
+        if(response.status===200){
+            alert("Claim Submitted")
+        }
         console.log(data);
     }
     return (
@@ -33,9 +36,9 @@ function SubmitClaims() {
             </div>
             <form onSubmit={submitClaim}>  
         <label className='form-control'>Amount</label>
-            <input className='form-control' onChange={changeamount} type="text" />
+            <input className='form-control' onChange={changeamount} type="text" required />
             <label className='form-control'>ClaimDate</label>
-            <input className='form-control' onChange={changeclaimDate} type="text" />
+            <input className='form-control' onChange={changeclaimDate} type="date" required />
             <button className='btn btn-success'>Submit</button>
             </form>
         </div>

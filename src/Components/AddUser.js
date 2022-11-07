@@ -85,23 +85,23 @@ function AddUser(props) {
             </div> 
         <form onSubmit={registerUser}>  
         <label className='form-control'>Name</label>
-            <input className='form-control' onChange={changeName} type="text" />
+            <input className='form-control' onChange={changeName} type="text" required/>
             <label className='form-control'>Phoneno</label>
-            <input className='form-control' onChange={changePhoneno} type="text" />
+            <input className='form-control' onChange={changePhoneno} type="text" required/>
             <label className='form-control'>EmailId</label>
-            <input className='form-control' onChange={changeemailId} type="text" />
+            <input className='form-control' onChange={changeemailId} type="text" required />
             <label className='form-control'>Address</label>
-            <input className='form-control' onChange={changeAddress} type="text" />
+            <input className='form-control' onChange={changeAddress} type="text" required />
              <label className='form-control'>State</label>
-            <input className='form-control' onChange={changeState} type="text" /> 
+            <input className='form-control' onChange={changeState} type="text" required /> 
             <label className='form-control'>Country</label>
-            <input className='form-control' onChange={changeCountry} type="text" /> 
+            <input className='form-control' onChange={changeCountry} type="text" required/> 
             <label className='form-control'>Date Of Birth</label>
-            <input className='form-control' onChange={changeDOB} type="date" />
+            <input className='form-control' onChange={changeDOB} type="date" required/>
             <label className='form-control'>Username</label>
-            <input className='form-control' onChange={changeUn} type="text" />
+            <input className='form-control' onChange={changeUn} type="text" required/>
             <label className='form-control'>Password</label>
-            <input className='form-control' type="password" onChange={changePass} />
+            <input className='form-control' type="password" onChange={changePass} required />
             <br/>
             <button  className='btn btn-success'>Register</button>
             <a href='/'>Already AUser? Login</a>

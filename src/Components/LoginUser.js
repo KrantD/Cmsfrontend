@@ -32,7 +32,7 @@ function LoginUser(props) {
         if(response.status===200)
         {
             sessionStorage.setItem("key", un)
-            navigate("/Plans")
+            navigate("/MemberPlans")
         }
         
     }
@@ -44,9 +44,9 @@ function LoginUser(props) {
             </div> 
         <form>  
             <label className='form-control'>Username</label>
-            <input className='form-control' value={un} onChange={(e)=>setun(e.target.value)} type="text" />
+            <input className='form-control' value={un} onChange={(e)=>setun(e.target.value)} type="text" required />
             <label className='form-control'>Password</label>
-            <input className='form-control' value={pass} type="password"onChange={(e)=>setpass(e.target.value)} />
+            <input className='form-control' value={pass} type="password"onChange={(e)=>setpass(e.target.value)} required/>
             
             <br/>
             <a href='Register'>New User? Register</a>
