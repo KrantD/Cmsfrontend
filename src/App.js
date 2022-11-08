@@ -15,6 +15,7 @@ import MemberPlans from './Components/MemberPlans';
 import SubmitClaims from './Components/SubmitClaims';
 import UpdatePlans from './Components/UpdatePlans';
 import ClaimDetails from './Components/ClaimDetails';
+import AddPlan from './Components/AddPlan';
 
 
 
@@ -41,6 +42,7 @@ function App() {
           <Route exact path="/Claims" element={<SubmitClaims />}></Route>
           <Route exact path="/Update" element={<UpdatePlans />}></Route>
           <Route exact path="/ClaimDetails" element={<ClaimDetails />}></Route>
+          <Route exact path="/Addplan" element={<AddPlan />}></Route>
         </Routes>
       </Router>
 

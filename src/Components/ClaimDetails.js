@@ -33,7 +33,7 @@ function ClaimDetails() {
                 )
             })
         }
-            <div className='logout'>
+            <div className='bla'>
                 <button onClick={() => navigate('/')} className='btn btn-success'>Logout</button>
             </div>
 

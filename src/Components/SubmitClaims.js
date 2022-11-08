@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './SubmitClaims.css'
+import { useNavigate } from 'react-router-dom';
 
 function SubmitClaims() {
+    const navigate = useNavigate();
     var [amount, setamount] = useState('');
     var [claimDate, setclaimDate] = useState('');
     var changeamount = (event) => {
@@ -41,6 +43,9 @@ function SubmitClaims() {
                 <input className='form-control' onChange={changeclaimDate} type="date" required />
                 <button className='btn btn-success'>Submit</button>
             </form>
+            <div className='bla'>
+                <button onClick={() => navigate('/')} className='btn btn-success'>Logout</button>
+            </div>
         </div>
     );
 }
